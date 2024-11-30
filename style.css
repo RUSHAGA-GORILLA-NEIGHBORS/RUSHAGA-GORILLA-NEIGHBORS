@@ -20,7 +20,7 @@ header{
     z-index: 100;
 }
 header a{
-    color: #eee;
+    color: #000;
     margin-right: 40px;
 }
 /* carousel */
@@ -330,7 +330,7 @@ nav {
 }
 
 nav .logo a {
-    color: white;
+    color: #000;
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -345,7 +345,7 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-    color: white;
+    color: #000;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -370,7 +370,7 @@ nav .nav-links a {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #333;
+        background-color: #fff;
         position: absolute;
         top: 70px;
         left: 0;
