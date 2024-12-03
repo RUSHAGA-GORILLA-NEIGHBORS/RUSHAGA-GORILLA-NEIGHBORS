@@ -463,6 +463,9 @@ nav .nav-links a {
 .tour-item h3 {
     color: #2e7d32;
 }
+.tour-item p {
+    color: #000;
+}
 
 .tour-item:hover {
     transform: scale(1.05);
