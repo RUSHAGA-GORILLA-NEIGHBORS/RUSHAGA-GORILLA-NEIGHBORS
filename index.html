@@ -679,10 +679,10 @@
             <div class="footer-section">
                 <h3>Contact Us</h3>
                 <div class="contact-buttons">
-                    <a href="https://wa.me/${+256777583051}" class="contact-btn whatsapp-btn" id="whatsapp-btn">
+                    <a href="`https://wa.me/${+256777583051}`" class="contact-btn whatsapp-btn" id="whatsapp-btn">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
-                    <a href="rushagaactivities@gmail.com" class="contact-btn email-btn" id="email-btn">
+                    <a href="`mailto:${rushagaactivities@gmail.com}`" class="contact-btn email-btn" id="email-btn">
                         <i class="fas fa-envelope"></i> Email Us
                     </a>
                 </div>
@@ -720,7 +720,7 @@
             document.getElementById('whatsapp-btn').href = `https://wa.me/${+256777583051}`;
             
             // Set email link
-            document.getElementById('email-btn').href = `mailto:${emailAddress}`;
+            document.getElementById('email-btn').href = `mailto:${rushagaactivities@gmail.com}`;
 
             // Optional: Add click tracking (you would need to implement your analytics)
             const allLinks = document.querySelectorAll('a[href]');
