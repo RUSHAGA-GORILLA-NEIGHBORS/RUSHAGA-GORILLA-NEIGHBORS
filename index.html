@@ -116,10 +116,10 @@
                 <img src="image/11.jpg">
                 <div class="content">
                     <div class="title">
-                        Name Slider
+                        
                     </div>
                     <div class="description">
-                        Description
+                        
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
 
                  </div>
                     <div class="description">
-                        Description
+                    
                     </div>
                 </div>
             </div>
@@ -138,10 +138,10 @@
                 <img src="image/33.jpg">
                 <div class="content">
                     <div class="title">
-                        Name Slider
+                        
                     </div>
                     <div class="description">
-                        Description
+                        
                     </div>
                 </div>
             </div>
@@ -149,10 +149,10 @@
                 <img src="image/44.jpg">
                 <div class="content">
                     <div class="title">
-                        Name Slider
+                    
                     </div>
                     <div class="description">
-                        Description
+                    
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@
                     Welcome to Rushaga Gorilla Neighbors, a non-profit organization dedicated to creating a positive impact in the Rushaga region of Uganda. Our mission is to provide essential support and services to both the local community and wildlife through education, conservation efforts, and promoting sustainable tourism.
                 </p>
                 <p>
-                    At Rushaga Gorilla Neighbors, we focus on a diverse range of activities aimed at preserving the environment, supporting vulnerable children and orphans, and fostering community development. Our main programs include the Batwa and Bakiga Experiences, which celebrate the rich traditions and cultures of the local people, as well as wildlife conservation efforts in collaboration with nearby protected areas.
+                    At Rushaga Gorilla Neighbours, we focus on a diverse range of activities aimed at preserving the environment, supporting vulnerable children and orphans, and fostering community development. Our main programs include the Batwa and Bakiga Experiences, which celebrate the rich traditions and cultures of the local people, as well as wildlife conservation efforts in collaboration with nearby protected areas.
                 </p>
                 <p>
                     We believe in the importance of balancing community development with nature conservation. Our activities are designed to raise awareness about wildlife protection while simultaneously providing opportunities for sustainable livelihoods for local communities. Whether you're looking to learn about the traditions of the Batwa people, take part in a guided forest walk, or enjoy a unique cultural experience, Rushaga Gorilla Neighbors offers something for everyone.
@@ -512,9 +512,89 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 @Rushaga Gorilla Neighbours. All rights reserved.</p>
+        <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" style="color: #ecf0f1; text-decoration: none;">Home</a></li>
+                    <li><a href="#" style="color: #ecf0f1; text-decoration: none;">Services</a></li>
+                    <li><a href="#" style="color: #ecf0f1; text-decoration: none;">About</a></li>
+                    <li><a href="#" style="color: #ecf0f1; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" id="facebook-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link twitter" id="twitter-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link instagram" id="instagram-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link linkedin" id="linkedin-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-buttons">
+                    <a href="#" class="contact-btn whatsapp-btn" id="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="#" class="contact-btn email-btn" id="email-btn">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Replace these with your actual social media links
+            const socialLinks = {
+                facebook: 'https://www.facebook.com/yourprofile',
+                twitter: 'https://twitter.com/yourprofile',
+                instagram: 'https://www.instagram.com/yourprofile',
+                linkedin: 'https://www.linkedin.com/in/yourprofile'
+            };
+
+            // Replace with your actual WhatsApp number (with country code but no + or 00)
+            const whatsappNumber = '1234567890';
+            
+            // Replace with your actual email address
+            const emailAddress = 'your.email@example.com';
+
+            // Set the href attributes for social links
+            document.getElementById('facebook-link').href = socialLinks.facebook;
+            document.getElementById('twitter-link').href = socialLinks.twitter;
+            document.getElementById('instagram-link').href = socialLinks.instagram;
+            document.getElementById('linkedin-link').href = socialLinks.linkedin;
+
+            // Set WhatsApp link
+            document.getElementById('whatsapp-btn').href = `https://wa.me/${whatsappNumber}`;
+            
+            // Set email link
+            document.getElementById('email-btn').href = `mailto:${emailAddress}`;
+
+            // Optional: Add click tracking (you would need to implement your analytics)
+            const allLinks = document.querySelectorAll('a[href]');
+            allLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    console.log(`Link clicked: ${this.href}`);
+                    // Here you could send this data to your analytics platform
+                });
+            });
+        });
+    </script>
 
     <script src="app.js"></script>
     <script type="text/javascript">
