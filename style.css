@@ -48,7 +48,7 @@ header a{
     width: 1140px;
     max-width: 80%;
     left: 50%;
-    transform: translateX(-90%);
+    transform: translateX(-20%);
     padding-right: 30%;
     box-sizing: border-box;
     color: #fff;
@@ -142,7 +142,7 @@ header a{
     color: #fff;
     font-family: monospace;
     font-weight: bold;
-    transition: .5s;
+    transition: .2s;
 }
 .arrows button:hover{
     background-color: #fff;
@@ -151,7 +151,7 @@ header a{
 
 /* animation */
 .carousel .list .item:nth-child(1){
-    z-index: 1;
+    z-index: 0.8;
 }
 
 /* animation text in first item */
@@ -165,7 +165,7 @@ header a{
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent .5s 1s linear 1 forwards;
+    animation: showContent .3s 1s linear 1 forwards;
 }
 @keyframes showContent{
     to{
@@ -175,16 +175,16 @@ header a{
     }
 }
 .carousel .list .item:nth-child(1) .content .title{
-    animation-delay: 1.2s!important;
+    animation-delay: 1.5s!important;
 }
 .carousel .list .item:nth-child(1) .content .topic{
-    animation-delay: 1.4s!important;
+    animation-delay: 1.8s!important;
 }
 .carousel .list .item:nth-child(1) .content .des{
-    animation-delay: 1.6s!important;
+    animation-delay: 1.9s!important;
 }
 .carousel .list .item:nth-child(1) .content .buttons{
-    animation-delay: 1.8s!important;
+    animation-delay: 1.9s!important;
 }
 /* create animation when next click */
 .carousel.next .list .item:nth-child(1) img{
@@ -194,7 +194,7 @@ header a{
     bottom: 50px;
     left: 50%;
     border-radius: 30px;
-    animation: showImage .5s linear 1 forwards;
+    animation: showImage .3s linear 1 forwards;
 }
 @keyframes showImage{
     to{
